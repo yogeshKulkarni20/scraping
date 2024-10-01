@@ -5,7 +5,6 @@ from src.services.upload import upload
 from src.services.delete import delete
 from src.services.process.process import process
 from src.utils.logging_utils import logger
-from output import output
 
 
 def scrape():

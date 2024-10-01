@@ -2,8 +2,8 @@ file_extension_to_language = {
     '.py': 'Python',
     '.js': 'JavaScript',
     '.ts': 'TypeScript',
-    '.jsx': 'JavaScript (React)',
-    '.tsx': 'TypeScript (React)',
+    '.jsx': 'JavaScript',
+    '.tsx': 'TypeScript',
     '.java': 'Java',
     '.cpp': 'C++',
     '.c': 'C',
@@ -79,6 +79,8 @@ file_extension_to_language = {
     '.hs': 'Haskell',
     '.erl': 'Erlang',
     '.hrl': 'Erlang Header',
+    ".scss": "sass",
+    "Makefile": "Makefile"
 }
 
 

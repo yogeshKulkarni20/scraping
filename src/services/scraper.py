@@ -12,9 +12,11 @@ from src.constant import github_comments_api_prefix, repo_updated_list
 
 load_dotenv()
 
-GITHUB_ACCESS_TOKEN_1 = os.getenv('GITHUB_ACCESS_TOKEN_1')
-GITHUB_ACCESS_TOKEN_2 = os.getenv('GITHUB_ACCESS_TOKEN_2')
-GITHUB_ACCESS_TOKEN_3 = os.getenv('GITHUB_ACCESS_TOKEN_3')
+GITHUB_ACCESS_TOKEN_1 = os.getenv("GITHUB_ACCESS_TOKEN_1")
+GITHUB_ACCESS_TOKEN_2 = os.getenv("GITHUB_ACCESS_TOKEN_2")
+GITHUB_ACCESS_TOKEN_3 = os.getenv("GITHUB_ACCESS_TOKEN_3")
+GITHUB_ACCESS_TOKEN_4 = os.getenv("GITHUB_ACCESS_TOKEN_4")
+GITHUB_ACCESS_TOKEN_5 = os.getenv("GITHUB_ACCESS_TOKEN_5")
 
 
 async def fetch_all_comments_per_repo(session, owner, repo, headers):
@@ -75,7 +77,7 @@ async def concurrent_repos_data():
         tasks = []
         for repo_details in repo_updated_list:
             accessToken = random.choice(
-                [GITHUB_ACCESS_TOKEN_1, GITHUB_ACCESS_TOKEN_2, GITHUB_ACCESS_TOKEN_3])
+                [GITHUB_ACCESS_TOKEN_1, GITHUB_ACCESS_TOKEN_2, GITHUB_ACCESS_TOKEN_3, GITHUB_ACCESS_TOKEN_4, GITHUB_ACCESS_TOKEN_5])
             HEADERS = {
                 "Authorization": f"Bearer {accessToken}",
                 "Accept": "application/vnd.github+json"
